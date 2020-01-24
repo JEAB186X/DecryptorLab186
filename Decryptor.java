@@ -30,9 +30,17 @@ public class Decryptor {
     }
 	
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-		for(int i = 0; i < toDecrypt.length; i++){ 
-			String temp = Integer.toString(toDecrypt[i]);
-			toDecrypt[i] = Integer.parseInt(temp, 2);
+		int temp;
+		int mult;
+		for(int i = 0; i < toDecrypt.length; i++){
+			temp = toDecrypt[i];
+			toDecrypt[i] = 0;
+			mult = 1;
+			while (temp > 0) {
+				toDecrypt[i] += (temp % 10) * mult;
+				temp /= 10;
+				mult *= 2;
+			}
 		}  
     }
 	
