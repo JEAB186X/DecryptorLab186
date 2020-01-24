@@ -63,55 +63,18 @@ public class Decryptor {
         	toDecrypt[i] = toDecrypt[i]/5; 
         }
     }
-
-    /**
-     * STEP 4: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
-     *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
-     *
-     * Given an array of decimal ints, using the A1Z26 Cypher, build a String
-     * that correlates each decimal value to a char (Character, a-z).
-     *
-     * HINT: This can be done in two additional lines of code.
-     *
-     * @param toDecrypt - The array to be decoded.
-     */
+	
     public static String A1Z26Cypher(int[] toDecrypt) {
-        HashMap<Integer, Character> cypher = new HashMap<>();
-        cypher.put(0, ' ');
-        cypher.put(1, 'a');
-        cypher.put(2, 'b');
-        cypher.put(3, 'c');
-        cypher.put(4, 'd');
-        cypher.put(5, 'e');
-        cypher.put(6, 'f');
-        cypher.put(7, 'g');
-        cypher.put(8, 'h');
-        cypher.put(9, 'i');
-        cypher.put(10, 'j');
-        cypher.put(11, 'k');
-        cypher.put(12, 'l');
-        cypher.put(13, 'm');
-        cypher.put(14, 'n');
-        cypher.put(15, 'o');
-        cypher.put(16, 'p');
-        cypher.put(17, 'q');
-        cypher.put(18, 'r');
-        cypher.put(19, 's');
-        cypher.put(20, 't');
-        cypher.put(21, 'u');
-        cypher.put(22, 'v');
-        cypher.put(23, 'w');
-        cypher.put(24, 'x');
-        cypher.put(25, 'y');
-        cypher.put(26, 'z');
-
-        StringBuilder solution = new StringBuilder();
-
-        for(int i = 0; i < toDecrypt.length; i++){
-            solution.append(cypher.get(toDecrypt[i]));
-        }
-
-        solution.append('!');
-        return solution.toString();
+		String text = "";
+		for (int i = 0; i < toDecrypt.length; i++) {
+			if (toDecrypt[i] == 0) {
+				text = text + ' ';
+			}
+			else {
+				text = text + (char) (toDecrypt[i] - 1 + 'a')
+			}
+		}
+		
+        return text;
     }
 }
