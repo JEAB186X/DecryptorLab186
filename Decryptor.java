@@ -57,21 +57,8 @@ public class Decryptor {
 			}
 		}
     }
-
-
-    /**
-     * STEP 3: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
-     *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
-     *
-     * Given an array of decimal ints, set the value
-     * of each index to be itself divided by 5.
-     *
-     * HINT: This can be done in two lines of code.
-     *
-     * @param toDecrypt - The array to be decoded.
-     */
+	
     public static void divideArrayValues(int[] toDecrypt) {
-
         for(int i = 0; i < toDecrypt.length; i++){
         	toDecrypt[i] = toDecrypt[i]/5; 
         }
