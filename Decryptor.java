@@ -71,7 +71,7 @@ public class Decryptor {
 				text = text + ' ';
 			}
 			else {
-				text = text + (char) (toDecrypt[i] - 1 + 'a')
+				text = text + (char) (toDecrypt[i] - 1 + 'a');
 			}
 		}
 		
