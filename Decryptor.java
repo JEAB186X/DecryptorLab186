@@ -1,31 +1,15 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-/**
- * For this mini-assignment, the goal is to git you guys more familiar with Git.
- * You'll need to finish each of the methods. We made certain to make each method
- * relatively simple, as we are aware not everyone has experience with Java yet.
- *
- * Fear not, most of these can be solved with simple Google searches. The primary
- * goal is to make it such that each one of your team members makes at least one
- * commit (most likely a commit per method completion). Once finished, show your
- * TA the working code, as well as your Git history showing every team member
- * made a contribution. Explain what problems you had. Did you get your first
- * taste of merge conflicts? Potentially this could have been separated into multiple
- * files? What are your thoughts?
- *
- * Remember, GOOGLE IS YOUR FRIEND! If you feel you're working too hard on a problem,
- * you most likely are. Oh, and if you are completely new to Java, you're going to
- * love how much easier it is to work with arrays (and other data structures) in this
- * language as opposed to C (The C solution for this is literally like 8x more complex).
- *
- * Place your @author tags here.
- * @author Thomas McCoy : tmccoy1@iastate.edu
- * @author ...
- * @author Ben Stroup : bstroup@iastate.edu
- * @author Andrew Deick : adeick@iastate.edu
+/**I am currently doing this to get used to using the git terminal.
+ * 
+ * You can put you're name here if you want, apparently.
+ * 
+ * @author Arvid Gustafson : arvidg@iastate.edu
  */
+
 public class Decryptor {
+	
     public static void main(String[] args) {
         int[] toDecrypt = {
                 101001, 1001101, 1010011, 11010, 10, 10000000, 1001100, 1101011, 11,
@@ -46,7 +30,6 @@ public class Decryptor {
     }
 	
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-		
 		for(int i = 0; i < toDecrypt.length; i++){ 
 			String temp = Integer.toString(toDecrypt[i]);
 			toDecrypt[i] = Integer.parseInt(temp, 2);
