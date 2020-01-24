@@ -44,28 +44,16 @@ public class Decryptor {
 
         System.out.println(A1Z26Cypher(toDecrypt));     // As a check, the first word in this String is "hope".
     }
-
-
-    /**
-     * STEP 1: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
-     *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
-     *
-     * Given an array of binary representations of numbers,
-     * converts each value into its decimal representation.
-     *
-     * HINT: This can be done in two lines of code.
-     *
-     * @param toDecrypt - The array to be decoded.
-     */
+	
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
-        for(int i = 0; i < toDecrypt.length; i++){ 
-        	String temp = Integer.toString(toDecrypt[i]); //converts int values to strings 
-          	toDecrypt[i] = Integer.parseInt(temp, 2); //parse the string to value of 2 for changing binary to decimal.
+		
+		for(int i = 0; i < toDecrypt.length; i++){ 
+			String temp = Integer.toString(toDecrypt[i]);
+			toDecrypt[i] = Integer.parseInt(temp, 2);
 		}  
     }
-
-
+	
+	
 	/**
      * STEP 2: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
      *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
@@ -98,7 +86,7 @@ public class Decryptor {
      */
     public static void divideArrayValues(int[] toDecrypt) {
 
-        for(int i = 0; i < sizeof(toDecrypt); i++){
+        for(int i = 0; i < toDecrypt.length; i++){
         	toDecrypt[i] = toDecrypt[i]/5; 
         }
     }
