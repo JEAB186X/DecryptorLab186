@@ -28,14 +28,43 @@ public class Decryptor {
 
         System.out.println(A1Z26Cypher(toDecrypt));     // As a check, the first word in this String is "hope".
     }
-	
+
+
+    /**
+     * STEP 1: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
+     *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
+     *
+     * Given an array of binary representations of numbers,
+     * converts each value into its decimal representation.
+     *
+     * HINT: This can be done in two lines of code.
+     *
+     * @param toDecrypt - The array to be decoded.
+     */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-		for(int i = 0; i < toDecrypt.length; i++){ 
-			String temp = Integer.toString(toDecrypt[i]);
-			toDecrypt[i] = Integer.parseInt(temp, 2);
+<<<<<<< HEAD
+        // TODO
+        for(int i = 0; i < toDecrypt.length; i++){ 
+        	String temp = Integer.toString(toDecrypt[i]); //converts int values to strings 
+          	toDecrypt[i] = Integer.parseInt(temp, 2); //parse the string to value of 2 for changing binary to decimal.
 		}  
     }
-	
+
+
+	/**
+     * STEP 2: COMPLETE THIS METHOD. ONCE COMPLETED, HAVE THE TEAM MEMBER
+     *         WHO COMPLETED THIS MAKE AND PUSH THE COMMIT TO GITHUB.
+     *
+     * Given an array of decimal ints, perform the following:
+     *      If the array index mod 3 == 0, modify its value to be itself - 1.
+     *      Else if the array index mod 3 == 1, modify its value to be itself - 2.
+     *      Otherwise, modify its value to be itself - 3.
+     *
+     * HINT: This CAN be done in two lines of logic. Realistically though,
+     *       it's easier to read and expectation is about seven lines of code.
+     *
+     * @param toDecrypt - The array to be decoded.
+     */
     public static void shiftArrayValues(int[] toDecrypt) {
 		for (int i = 0; i < toDecrypt.length; i++) {
 			if (i % 3 == 0) {
@@ -51,7 +80,7 @@ public class Decryptor {
     }
 	
     public static void divideArrayValues(int[] toDecrypt) {
-        for(int i = 0; i < toDecrypt.length; i++){
+        for(int i = 0; i < sizeof(toDecrypt); i++){
         	toDecrypt[i] = toDecrypt[i]/5; 
         }
     }
