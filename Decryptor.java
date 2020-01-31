@@ -66,21 +66,11 @@ public class Decryptor {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-		for (int i = 0; i < toDecrypt.length; i++) {
-			if (i % 3 == 0) {
-				toDecrypt[i] -= 1;
-			}
-			else if (i % 3 == 1) {
-				toDecrypt[i] -= 2;
-			}
-			else {
-				toDecrypt[i] -= 3;
-			}
-		}
+		
     }
 	
     public static void divideArrayValues(int[] toDecrypt) {
-        for(int i = 0; i < sizeof(toDecrypt); i++){
+        for(int i = 0; i < toDecrypt.length; i++){
         	toDecrypt[i] = toDecrypt[i]/5; 
         }
     }
